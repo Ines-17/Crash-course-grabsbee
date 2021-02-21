@@ -2,60 +2,94 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grabsbee - your frisbee web store</title>
+    <meta name="title" content="Inova Product Name">
+    <title>Product Name - Best place to get profi frisbee gear</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header>
-      <h1>Grabsbee</h1>
-      <ul>
-        <li>
-          <button>Search</button>
-          <div>
+    <header class="header">
+      <div class="container header__content">
+        <h2 class="visualy-hidden">Grabsee Webshop</h2>
+        <a href="./index.html" class="logo__link">
+            <img src="./assets/img/grabsbee.svg" alt="Grabsee Webshop logo" class="logo__img">
+        </a>
+    
+      <ul class="header__drawers-list">
+        <li class="header__drawers-list__item">
+          <button class="button--no-styles header__buttons">
+            <span class="icon-search"></span>
+            <span class="visualy-hidden">Search</span>
+          </button>
+          <div class="visualy-hidden">
             <form action="">
               <fieldset>
-                <legend tabindex="0">Grabsbee search form</legend>
+                <legend class="visualy-hidden"  tabindex="0">Grabsbee search form</legend>
                 <label tabindex="0" for="search"
                   >Search entire store here...
                 </label>
-                <input name="search" type="text" />
-                <button>Search it</button>
+                <input
+                  name="search"
+                  type="search"
+                  placeholder="Search entire store here..."
+                  aria-label="Search through entire store"
+                />
+                <button class="button--no-styles">
+                  <span class="icon-search"></span>
+                  <span class="visualy-hidden">Search it</span>
+                </button>
               </fieldset>
             </form>
-            <button>Close</button>
+            <button class="button--no-styles header__buttons">
+              <span>Close</span>
+              <span class="icon-x-circle"></span>
+            </button>
           </div>
         </li>
-        <li><button>MiniCart</button></li>
-        <section>
-          <header>
+        <li class="header__drawers-list__item">
+          <button class="button--no-styles header__buttons">
+            <span class="icon-shopping-cart"></span>
+            <span class="visualy-hidden">Cart</span>
+          </button>
+
+        <section class="visualy-hidden">
+          <h2>
             <p># item in Cart</p>
-          </header>
+          </h2>
+          <button class="button--no-styles header__buttons">
+            <span>Close</span>
+            <span class="icon-x-circle"></span>
+          </button>
           <ul>
             <li>
-              <div class="">
+              <div>
                 <img src="" alt="Item 1" />
               </div>
-              <div class="">
+              <div >
                 <h2>
                   <a href="#">Item 1</a>
                 </h2>
-                <dl class="">
+                <dl>
                   <dt tabindex="0">Color</dt>
                   <dd tabindex="0">Black</dd>
                   <dt tabindex="0">Price</dt>
                   <dd tabindex="0">10$</dd>
                   <dt tabindex="0">Qty:</dt>
                   <dd>
-                    <form class="" action="index.html" method="post">
+                    <form class="" action="" method="">
                       <fieldset>
-                        <legend tabindex="0">Item qty control</legend>
+                        <legend>Item qty control</legend>
                         <label for="qty"></label>
                         <input type="number" name="qty" value="" />
                       </fieldset>
@@ -65,10 +99,10 @@
               </div>
             </li>
             <li>
-              <div class="">
+              <div>
                 <img src="" alt="Item 2" />
               </div>
-              <div class="">
+              <div>
                 <h2>
                   <a href="#">Item 2</a>
                 </h2>
@@ -79,9 +113,9 @@
                   <dd tabindex="0">12$</dd>
                   <dt tabindex="0">Qty:</dt>
                   <dd>
-                    <form class="" action="index.html" method="post">
+                    <form action="" method="">
                       <fieldset>
-                        <legend tabindex="0">Item qty control</legend>
+                        <legend>Item qty control</legend>
                         <label for="qty"></label>
                         <input type="number" name="qty" value="" />
                       </fieldset>
@@ -92,47 +126,53 @@
             </li>
           </ul>
           <table>
-            <caption tabindex="0">
+            <caption>
               Your Totals table
             </caption>
             <tbody>
               <tr>
-                <th>Subtotal</th>
-                <td>$$</td>
+                <th tabindex="0">Subtotal</th>
+                <td tabindex="0">$$</td>
               </tr>
             </tbody>
           </table>
-          <div class="">
-            <button type="button" name="button">Proceed to checkout</button>
+          <div>
+            <button >Proceed to checkout</button>
             <a href="#" title="Back to Cart page">View and edit Cart</a>
           </div>
-          <div class="">
+          <div>
             <strong>You have no items in your shopping cart</strong>
           </div>
         </section>
-        <li>
-          <button type="button" name="button">Navigation Trigger</button>
-          <nav>
+    </li>
+        <li class="header__drawers-list__item">
+          <button
+            class="button--no-styles header__buttons visualy-hidden--desktop"
+          >
+            <span class="icon-menu"></span>
+            <span class="visualy-hidden">Navigation Trigger</span>
+          </button>
+          <nav class="visualy-hidden">
             <ul>
               <li>
-                <h2 tabindex="0">Frisbees</h2>
+                <h2>Frisbees</h2>
                 <div>
-                  <h3>Ultimate Frisbees</h3>
+                  <h3 tabindex="0">Ultimate Frisbees</h3>
                   <ul>
-                    <li><a href="" target="">Innova Pulsar</a></li>
-                    <li><a href="">Xcom</a></li>
-                    <li><a href="">Aviator - Marvel Captain America</a></li>
+                    <li><a href="./product-list.html">Innova Pulsar</a></li>
+                    <li><a href="#">Xcom</a></li>
+                    <li><a href="#">Aviator - Marvel Captain America</a></li>
                   </ul>
                 </div>
-                <div class="">
+                <div>
                   <h3 tabindex="0">Recreational</h3>
                   <ul>
                     <li><a href="#">Nite</a></li>
-                    <li><a href="#">ikin</a></li>
+                    <li><a href="#">Yikin</a></li>
                   </ul>
                 </div>
-                <div class="">
-                  <h3 tabindex="0">Contact us</h3>
+                <div>
+                  <h3>Contact us</h3>
                   <ul>
                     <li tabindex="0">Trg Slobode 6</li>
                     <li><a href="tel:+385958811630">+385 95 8811630</a></li>
@@ -144,17 +184,17 @@
                   </ul>
                 </div>
               </li>
-              <h2 tabindex="0">Clothing</h2>
-              <div class="">
-                <h3>Ultimate Frisbees</h3>
+              <h2>Clothing</h2>
+              <div>
+                <h3 tabindex="0">Ultimate Frisbees</h3>
                 <ul>
-                  <li><a href="">Innova Pulsar</a></li>
-                  <li><a href="">Xcom</a></li>
-                  <li><a href="">Aviator - Marvel Captian America</a></li>
+                  <li><a href="./product-list.html">Innova Pulsar</a></li>
+                  <li><a href="./product-list.html">Xcom</a></li>
+                  <li><a href="./product-list.html">Aviator - Marvel Captian America</a></li>
                 </ul>
               </div>
-              <div class="">
-                <h3 tabindex="0">Recreational</h3>
+              <div>
+                <h3>Recreational</h3>
                 <ul>
                   <li><a href="">Nite</a></li>
                   <li><a href="">Yikin</a></li>
@@ -172,88 +212,96 @@
                   </li>
                 </ul>
               </div>
+            </li>
               <li>
-                <h2 tabindex="0">Accessories</h2>
+                <h2>Accessories</h2>
               </li>
               <li>
-                <h2 tabindex="0">Contact us</h2>
+                <h2>Contact us</h2>
               </li>
             </ul>
-            <button type="button" name="button">Close Nav</button>
+            <button class="button--no-styles header__buttons">
+              <span>Close</span>
+              <span class="icon-x-circle"></span>
+            </button>
           </nav>
         </li>
       </ul>
+    </div>
     </header>
 
-    <main>
-      <div class="">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Freesbe</a></li>
-          <li><a href="#">Ultimate Freesbe</a></li>
-          <li><a href="#">Ultimate Freesbe</a></li>
-        </ul>
-      </div>
-      <section>
+    <main  class="container">
+      <ul class="breadcrumb" aria-label="breadcrumb">
+        <li class="breadcrumb__item" aria-label="breadcrumb">
+            <a class="breadcrumb__link" href="#" title="Grabsee Home">Home</a>
+        </li>
+        <li class="breadcrumb__item" aria-label="breadcrumb">
+            <a class="breadcrumb__link" href="#" title="Grabsee Main Category">Freesbe</a>
+        </li>
+        <li class="breadcrumb__item" aria-label="breadcrumb" aria-current="location" tabindex="0">Ultimate Frisbee</li>
+    </ul>
+      
         <div class="">
           <picture>
-            <source src="https://" />
+            <source src=""/>
             <img src="" alt="product1" />
           </picture>
           <ul>
-            <li><img src="" alt="" /> Black</li>
-            <li><img src="" alt="" /> Orange</li>
-          </ul>
+            <li>
+                <img src="" alt="">
+            </li>
+            <li>
+                <img src="" alt="">
+            </li>
+            <li>
+                <img src="" alt="">
+            </li>
+        </ul>
         </div>
         <div class="">
-          <h2 tabindex="0">
-            Innova Polsar | major League Ultimate Championship 175 Gram Flying
-            Disc Ultrastar
-          </h2>
-          <p>In Stock</p>
-          <p><strong>SKU:</strong>WH12</p>
-          <p>Be the first to review this product</p>
-          <h3>As low as: <strong>$68.99</strong></h3>
-          <ul>
-            <caption tabindex="0">
-              <small>Color:</small>
-            </caption>
-            <li>
-              <label for="black"></label>
-              <input type="color" id="black" name="black" value="#000" />
-            </li>
-            <li>
-              <label for="orange"></label>
-              <input type="color" id="orange" name="orange" value="#fc8719" />
-            </li>
-            <li>
-              <label for="purple"></label>
-              <input type="color" id="purple" name="purple" value="#b000c7" />
-            </li>
-          </ul>
-          <form class="" action="" method="">
-            <label tabindex="0" for="qty">Qty:</label>
-            <input type="number" name="" value="" />
-          </form>
-          <button type="button" name="button">Add to cart</button>
-          <div>
-            <ul>
-              <li>
-                <a href="#">
-                  <span>Add to Wishlist</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>Add to Compare</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <h1>Inova Product Name</h1>
+            <p>In stock</p>
+            <p><strong>SKU</strong> WH12</p>
+            <small>Be the first to review this product</small>
+          <div class="price-box">
+            <span>As low as</span>
+            <span>$21.99</span>
         </div>
-      </section>
+        <form action="">
+          <dl>
+              <dt>Color</dt>
+              <dd>Black</dd>
+              <dd>Blue</dd>
+              <dd>Cian</dd>
+          </dl>
+
+          <fieldset>
+              <legend>Item qty</legend>
+              <label for="qty">Qty:</label>
+              <input name="qty" type="number">
+          </fieldset>
+
+          <button class="button button--primary" type="submit">Add to Cart</button>
+
+          <ul>
+              <li>
+                  <a href="" title="Add to wishlist">
+                      <span class="icon-heart"></span> Add to Wishlist</a>
+              </li>
+              <li>
+                  <a href="" title="Add to Compare">
+                      <span class="icon-bar-chart"></span> Add to Compare</a>
+              </li>
+          </ul>
+      </form>
+  </div>
+      
       <section>
-        <h3>Details</h3>
+        <details>
+          <summary>
+              <h2 aria-labeledby="" aria-controls="details" aria-selected="" aria-expanded="true" tabindex="0">Details</h2>
+          </summary>
+          <div aria-labelledby="" tabindex="0">
         <p>Note: Stamp colour on disc may vary from pictured image.</p>
         <p>
           This is not a Frisbee its a quality Flying Disc, if you dont know the
@@ -267,9 +315,15 @@
           throw and catch in the backyard or park. The Pulsar is also approved
           for Super Class and PDGA disc golf use.
         </p>
-      </section>
-      <section>
-        <h3>More information</h3>
+        </div>
+        </details>
+    
+     
+        <details>
+          <summary>
+              <h2 aria-labeledby="" aria-controls="description" aria-selected="" aria-expanded="true" tabindex="0">More information</h2>
+          </summary>
+          <div aria-labelledby="" tabindex="0">
         <table>
           <thead></thead>
           <tbody>
@@ -291,47 +345,56 @@
             </tr>
           </tbody>
         </table>
+        </div>
+        </details>
       </section>
     </main>
-    <footer>
-      <section>
-        <h2 tabindex="0">Newsletter</h2>
+    <footer class="footer">
+      <section class="newsletter__content">
+        <div class="container">
+          <h2 class="footer__title">Newsletter</h2>
         <p tabindex="0">
           Sign up for our newsletter and be the first to find out about new
           products, discounts and more.
         </p>
         <form action="">
           <fieldset>
-            <legend>Grabsbee Newsletter Form</legend>
-            <label tabindex="0" for="newsletter"
+            <legend class="visualy-hidden">Grabsbee Newsletter Form</legend>
+            <label class="visualy-hidden" tabindex="0" for="newsletter"
               >Enter your email in order to become the Grabsbee
               subscriber</label
             >
             <input
-              placeholder="Enter your email adress"
+              placeholder="Enter your email address"
               name="newsletter"
               type="email"
             />
-            <button>Subscribe</button>
+            <button class="button button--primary" type="submit">
+              Subscibe
+            </button>
           </fieldset>
         </form>
+        </div>
       </section>
-      <section>
-        <details open>
-          <summary>
-            <h2>Categories</h2>
+      <section class="summary__content">
+        <div class="container">
+        <details class="footer__details" open>
+          <summary class="footer__summary">
+            <h2 class="footer__title footer__summary-title">Categories</h2>
           </summary>
           <ul>
-            <li><a href="">Fresbee</a></li>
-            <li><a href="">Gear</a></li>
-            <li><a href="">Accessories</a></li>
-            <li><a href="">Gifts</a></li>
+            <li><a class="summary__links" href="">Frisbee</a></li>
+            <li><a class="summary__links" href="">Gear</a></li>
+            <li><a class="summary__links" href="">Accessories</a></li>
+            <li><a class="summary__links" href="">Gifts</a></li>
           </ul>
         </details>
-        <details open>
-          <summary>Contact us</summary>
+        <details class="footer__details">
+          <summary class="footer__summary">
+            <h2 class="footer__title footer__summary-title">Contact us</h2>
+          </summary>
           <ul>
-            <li><address class="">Trg Slobode 6</address></li>
+            <li tabindex="0"><address class="">Trg Slobode 6</address></li>
             <li><a href="tel:+385958811630">+385 95 8811630</a></li>
             <li>
               <a href="mailto:filip.svetlicic@gmail.com"
@@ -340,10 +403,13 @@
             </li>
           </ul>
         </details>
+        </div>
       </section>
-      <div class="">
-        <small>Copyright &reg; 2021 Grabsbee</small>
+      <div class="container copyright">
+        <small class="copyright__text" tabindex="0"
+          >Copyright &reg; 2021 Grabsbee</small
+        >
       </div>
     </footer>
-  </body>
-</html>
+    </body>
+    </html>
