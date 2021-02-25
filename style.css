@@ -573,21 +573,47 @@ table {
   color: var(--text__color__invert);
 }
 .footer__title {
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 12px
+  font-size: 12px;
+  font-family: 'Open Sans';
+  color: #FFF;
 }
 .newsletter__content {
   background-color: #ec1d2e;
   background-color: var(--secondary__color);
-  color: #4E4E4E;
+  color: #FFF;
   color: var(--text__color);
   text-align: center;
   padding-top: 1.3125rem;
   padding-bottom: 1.3125rem;
 }
+.footer-content {
+letter-spacing: .02rem;
+color: #fff;
+font-size: 12px;
+padding: 0 1.5rem;
+}
+a[href="./product-list.html"] {
+  border-style: none;
+}
+button[type="submit"] {
+  border-style: none;
+  margin: 1.5rem 0 .8rem;
+  width: 100%;
+  justify-content: center;
+}
+input[type="email"] {
+  border-style: none;
+}
 .footer__summary {
- cursor: pointer
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row-reverse;
+}
+.footer__title {
+padding-top: 1rem;
 }
 .footer__summary:before {
     font-family: "Inchoo-Icons";
@@ -601,6 +627,7 @@ table {
     text-transform: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-top: 1rem;
   }
 .footer__summary-title {
   line-height: 2;
@@ -611,6 +638,7 @@ table {
   color: #FFF;
   color: var(--text__color__invert);
 }
+
 .summary__links {
   text-decoration: none;
   color: #FFF;
@@ -788,7 +816,7 @@ p {
     font-size: 16px;
     height: 48px;
     padding-left: 2.2857142857142856rem;
-    padding-right: 2.2857142857142856rem
+    padding-right: 2.2857142857142856rem;
 }
 select,
 input[type="text"],
