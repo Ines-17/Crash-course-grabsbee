@@ -27,3 +27,34 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+    const 
+    cart = document.querySelector('.cart-trigger');
+    close= document.querySelector('.cart-btn');
+   search = document.querySelector('.search-trigger');
+   exit= document.querySelector('.search-btn');
+   menu= document.querySelector('.menu-trigger');
+    menuexit = document.querySelector('.close-menu');
+
+
+
+ cart.addEventListener('click', function(){
+  document.querySelector('.minicart').classList.remove('visualy-hidden');
+ });
+ close.addEventListener('click', function(){
+  document.querySelector('.minicart').classList.add('visualy-hidden');
+ })
+  
+search.addEventListener('click', function(){
+  document.querySelector('.search-form').classList.remove('visualy-hidden');
+});
+ exit.addEventListener('click', function(){
+  document.querySelector('.search-form').classList.add('visualy-hidden');
+ })
+
+ menu.addEventListener('click', function(){
+  document.querySelector('nav').classList.remove('visualy-hidden');
+});
+ menuexit.addEventListener('click', function(){
+  document.querySelector('nav').classList.add('visualy-hidden');
+ })
