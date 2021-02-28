@@ -224,61 +224,67 @@
 		</header>
 
 		<main class="container">
-			<ul class="breadcrumb" aria-label="breadcrumb">
-				<li class="breadcrumb__item" aria-label="breadcrumb">
-					<a class="breadcrumb__link" href="#" title="Grabsee Home">Home</a>
-				</li>
-				<li class="breadcrumb__item" aria-label="breadcrumb">
-					<a class="breadcrumb__link" href="#" title="Grabsee Main Category">Freesbe</a>
-				</li>
-				<li class="breadcrumb__item" aria-label="breadcrumb" aria-current="location" tabindex="0">
-					Ultimate Frisbee
-				</li>
-			</ul>
-
-			<div class="">
-				<picture>
-					<source src="" />
-					<img src="" alt="product1" />
-				</picture>
-				<ul>
-					<li>
-						<img src="" alt="" />
+			<div class="container breadcrumb">
+				<ul class="breadcrumb__list" aria-label="breadcrumb">
+					<li class="breadcrumb__item" aria-label="breadcrumb">
+						<a class="breadcrumb__link" href="./index.html" title="Grabsee Home">Home</a>
+						<span class="icon-chevron-right icon-breadcrumb"></span>
 					</li>
-					<li>
-						<img src="" alt="" />
+					<li class="breadcrumb__item" aria-label="breadcrumb">
+						<a class="breadcrumb__link" href="./product-list.html" title="Grabsee Main Category">Freesbe</a>
+						<span class="icon-chevron-right icon-breadcrumb"></span>
 					</li>
-					<li>
-						<img src="" alt="" />
+					<li
+						class="breadcrumb__item breadcrumb__item-last"
+						aria-label="breadcrumb"
+						aria-current="location"
+						tabindex="0"
+					>
+						Innova Pulsar
 					</li>
 				</ul>
 			</div>
-			<div class="">
-				<h1>Inova Product Name</h1>
-				<p>In stock</p>
-				<p><strong>SKU</strong> WH12</p>
-				<small>Be the first to review this product</small>
+
+			<div class="product-one">
+				<picture>
+					<img src="./assets/img/product-one.png" alt="product - 1" />
+				</picture>
+				<ul class="color-products">
+					<li>
+						<img src="./assets/img/product-two.png" alt="Black disc" />
+					</li>
+					<li>
+						<img src="./assets/img/product-three.png" alt="Orange disc" />
+					</li>
+				</ul>
+			</div>
+			<div class="product__spec">
+				<h1 class="product__spec--title">
+					Inova Pulsar | Major League Ultimate Championship 175 Gram Flying Disc Ultrastar
+				</h1>
+				<p class="in-stock">In stock</p>
+				<p class="in-stock"><strong>SKU:</strong> WH12</p>
+				<p class="review"><small>Be the first to review this product</small></p>
 				<div class="price-box">
-					<span>As low as</span>
-					<span>$21.99</span>
+					<span>As low as:</span>
+					<span><strong>$21.99</strong></span>
 				</div>
-				<form action="">
+				<form action="" class="color-form">
 					<dl>
 						<dt>Color</dt>
-						<dd>Black</dd>
-						<dd>Blue</dd>
-						<dd>Cian</dd>
+						<label for="color-black"></label>
+						<input class="colors" type="color" name="color-black" value="#000000" id="color-black" />
+						<label for="color-blue"></label>
+						<input class="colors" type="color" name="color-blue" value="#1857F7" id="color-blue" />
+						<label for="color-pink"></label>
+						<input class="colors" type="color" name="color-pink" value="#EF3DFF" id="color-pink" />
 					</dl>
-
-					<fieldset>
-						<legend>Item qty</legend>
+					<fieldset class="qty-product">
 						<label for="qty">Qty:</label>
-						<input name="qty" type="number" />
+						<input name="qty" type="number" id="qty-product" value="1" />
 					</fieldset>
-
 					<button class="button button--primary" type="submit">Add to Cart</button>
-
-					<ul>
+					<ul class="wishlist product-wishlist">
 						<li>
 							<a href="" title="Add to wishlist"> <span class="icon-heart"></span> Add to Wishlist</a>
 						</li>
@@ -288,21 +294,14 @@
 					</ul>
 				</form>
 			</div>
-
 			<section>
-				<details>
+				<details open>
 					<summary>
-						<h2
-							aria-labeledby=""
-							aria-controls="details"
-							aria-selected=""
-							aria-expanded="true"
-							tabindex="0"
-						>
+						<h2 class="product-summary--title" aria-controls="details" aria-expanded="true" tabindex="0">
 							Details
 						</h2>
 					</summary>
-					<div aria-labelledby="" tabindex="0">
+					<div class="product-summary" tabindex="0">
 						<p>Note: Stamp colour on disc may vary from pictured image.</p>
 						<p>
 							This is not a Frisbee its a quality Flying Disc, if you dont know the difference think of
@@ -316,13 +315,11 @@
 						</p>
 					</div>
 				</details>
-
 				<details>
 					<summary>
 						<h2
-							aria-labeledby=""
+							class="product-summary--title"
 							aria-controls="description"
-							aria-selected=""
 							aria-expanded="true"
 							tabindex="0"
 						>
@@ -359,7 +356,7 @@
 			<section class="newsletter__content">
 				<div class="container">
 					<h2 class="footer__title">Newsletter</h2>
-					<p tabindex="0">
+					<p class="footer-content" tabindex="0">
 						Sign up for our newsletter and be the first to find out about new products, discounts and more.
 					</p>
 					<form action="">
@@ -369,14 +366,14 @@
 								>Enter your email in order to become the Grabsbee subscriber</label
 							>
 							<input placeholder="Enter your email address" name="newsletter" type="email" />
-							<button class="button button--primary" type="submit">Subscibe</button>
+							<button class="button button--primary" type="submit">Subscribe</button>
 						</fieldset>
 					</form>
 				</div>
 			</section>
 			<section class="summary__content">
 				<div class="container">
-					<details class="footer__details" open>
+					<details class="footer__details">
 						<summary class="footer__summary">
 							<h2 class="footer__title footer__summary-title">Categories</h2>
 						</summary>
@@ -392,7 +389,9 @@
 							<h2 class="footer__title footer__summary-title">Contact us</h2>
 						</summary>
 						<ul>
-							<li tabindex="0"><address class="">Trg Slobode 6</address></li>
+							<li tabindex="0">
+								<address class="">Trg Slobode 6</address>
+							</li>
 							<li><a href="tel:+385958811630">+385 95 8811630</a></li>
 							<li>
 								<a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a>
@@ -405,5 +404,6 @@
 				<small class="copyright__text" tabindex="0">Copyright &reg; 2021 Grabsbee</small>
 			</div>
 		</footer>
+		<script src="./javaScript/product-list.js"></script>
 	</body>
 </html>
