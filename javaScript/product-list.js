@@ -28,3 +28,11 @@ menu.addEventListener('click', () => {
 menuexit.addEventListener('click', () => {
  document.querySelector('nav').classList.add('visualy-hidden');
 })
+if (window.innerWidth > 700) {
+    document.getElementById("myDetails").open = true;
+    document.getElementById("details").open = true;
+   }
+   else {
+    document.getElementById("myDetails").open = false;
+    document.getElementById("details").open = false;
+}

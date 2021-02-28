@@ -423,26 +423,26 @@
 
 		<footer class="footer">
 			<section class="newsletter__content">
-				<div class="container">
+				<div class="container newsletter-container">
 					<h2 class="footer__title">Newsletter</h2>
 					<p class="footer-content" tabindex="0">
 						Sign up for our newsletter and be the first to find out about new products, discounts and more.
 					</p>
 					<form action="">
-						<fieldset>
+						<fieldset class="desktop-mail">
 							<legend class="visualy-hidden">Grabsbee Newsletter Form</legend>
 							<label class="visualy-hidden" tabindex="0" for="newsletter"
 								>Enter your email in order to become the Grabsbee subscriber</label
 							>
 							<input placeholder="Enter your email address" name="newsletter" type="email" />
-							<button class="button button--primary" type="submit">Subscribe</button>
+							<button class="button button--primary btn-subscribe" type="submit">Subscribe</button>
 						</fieldset>
 					</form>
 				</div>
 			</section>
 			<section class="summary__content">
-				<div class="container">
-					<details class="footer__details">
+				<div class="container footer-container">
+					<details id="myDetails" class="footer__details">
 						<summary class="footer__summary">
 							<h2 class="footer__title footer__summary-title">Categories</h2>
 						</summary>
@@ -453,17 +453,23 @@
 							<li><a class="summary__links" href="">Gifts</a></li>
 						</ul>
 					</details>
-					<details class="footer__details">
+					<details id="details" class="footer__details">
 						<summary class="footer__summary">
 							<h2 class="footer__title footer__summary-title">Contact us</h2>
 						</summary>
 						<ul>
 							<li tabindex="0">
-								<address class="">Trg Slobode 6</address>
+								<address class="mail-phone"><span class="icon-map-pin"> </span> Trg Slobode 6</address>
 							</li>
-							<li><a href="tel:+385958811630">+385 95 8811630</a></li>
 							<li>
-								<a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a>
+								<span class="icon-phone"> </span
+								><a class="mail-phone" href="tel:+385958811630"> +385 95 8811630</a>
+							</li>
+							<li>
+								<span class="icon-mail"> </span>
+								<a class="mail-phone" href="mailto:filip.svetlicic@gmail.com">
+									filip.svetlicic@gmail.com</a
+								>
 							</li>
 						</ul>
 					</details>
