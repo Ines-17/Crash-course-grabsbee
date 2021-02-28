@@ -5,7 +5,8 @@ search = document.querySelector('.search-trigger');
 exit= document.querySelector('.search-btn');
 menu= document.querySelector('.menu-trigger');
 menuexit = document.querySelector('.close-menu');
-
+shop =  document.querySelector('.shop-by-btn');
+closeShopp= document.querySelector('.close-shop');
 
 
 cart.addEventListener('click', () => {
@@ -27,7 +28,16 @@ menu.addEventListener('click', () => {
 });
 menuexit.addEventListener('click', () => {
  document.querySelector('nav').classList.add('visualy-hidden');
-})
+});
+
+shop.addEventListener('click', () => {
+    document.querySelector('.shopp-options').classList.remove('visualy-hidden');
+   });
+   closeShopp.addEventListener('click', () => {
+    document.querySelector('.shopp-options').classList.add('visualy-hidden');
+   });
+
+
 if (window.innerWidth > 700) {
     document.getElementById("myDetails").open = true;
     document.getElementById("details").open = true;
